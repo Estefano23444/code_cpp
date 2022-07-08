@@ -153,38 +153,3 @@ void serie09(int NroTer)
     }
 }
 
-void Triangulo15(int n)
-{
-
-	for (int linea = 1; linea <= n; linea++)
-	{
-		int C = 1; 
-
-		for (int i = 1; i < (n - linea + 1); i++){
-			cout << "   ";
-		}
-
-		for (int i = 1; i <= linea; i++)
-		{
-
-			// El primer valor de la fila es 1 siempre
-			cout << C  << "     ";
-			C = C * (linea - i) / i;
-		}
-
-		cout << "\n";
-	}
-}
-
-
-int main()
-{
-	int n;
-
-	cout << "Proporciona el numero de filas del triangulo: ";
-	
-	cin >> n;
-	
-	Triangulo15(n);
-	return 0;
-}
